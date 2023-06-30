@@ -129,7 +129,7 @@
     "qs": "^6.11.0",
     "range-parser": "^1.2.1",
     "raw-body": "^2.5.2",
-    "readable-stream": "^1.1.14",
+    "readable-stream": "^1.1.14", 
     "rimraf": "^3.0.2",
     "safe-buffer": "^5.2.1",
     "safer-buffer": "^2.1.2",
@@ -168,7 +168,8 @@
     "yallist": "^4.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -176,4 +177,5 @@
   "devDependencies": {
     "hint": "^7.1.9"
   }
+  
 }
