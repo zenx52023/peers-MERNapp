@@ -30,7 +30,7 @@ app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(morgan("common"));
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
-app.use(cors());
+app.use(cors({ origin: 'https://peersnetwork-99024.web.app' }));;
 app.use("/assets", express.static(path.join(__dirname, "public/assets")));
 app.use(serveFavicon(path.join(__dirname, "public", "favicon.ico")));
 app.use(express.static(path.join(__dirname, "public")));
@@ -82,7 +82,7 @@ app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
 
 /* MONGOOSE SETUP */
-const PORT = process.env.PORT;
+const PORT = process.env.PORT;t 
 const MONGO_URL = process.env.MONGO_URL;
 mongoose
   .connect('mongodb+srv://mehedihasanjagaran:9jpIv56ZtBWgAty7@peerscluster.ovwsr3n.mongodb.net/?retryWrites=true&w=majorityL', {
