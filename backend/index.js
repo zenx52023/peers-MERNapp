@@ -82,7 +82,7 @@ app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
 
 /* MONGOOSE SETUP */
-const PORT = process.env.PORT;t 
+const PORT = process.env.PORT;
 const MONGO_URL = process.env.MONGO_URL;
 mongoose
   .connect('mongodb+srv://mehedihasanjagaran:9jpIv56ZtBWgAty7@peerscluster.ovwsr3n.mongodb.net/?retryWrites=true&w=majorityL', {
